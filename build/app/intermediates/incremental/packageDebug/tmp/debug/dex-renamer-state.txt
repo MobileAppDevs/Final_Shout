@@ -1,0 +1,4 @@
+#Thu Jun 08 10:19:55 IST 2023
+base.0=/home/ongraph/Documents/final_shout/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
