@@ -10,7 +10,7 @@ class TabBarScreen extends StatefulWidget {
 }
 
 class _TabBarScreenState extends State<TabBarScreen> {
-  int _bottomNavIndex = 0;
+  final int _bottomNavIndex = 0;
 
   final iconList = <IconData>[
     Icons.home,
@@ -21,17 +21,9 @@ class _TabBarScreenState extends State<TabBarScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(  
       resizeToAvoidBottomInset: false,
-      // backgroundColor: Colors.transparent,
-      // floatingActionButton: FloatingActionButton(
-      //     onPressed: () async {
-      //       Navigator.push<bool>(context, MaterialPageRoute(builder: (context) => splashScreen())).then((value) {
-      //         if (value ?? false) {}
-      //       });
-      //     },
-      //     child: const Icon(Icons.home),
-      //     backgroundColor: Colors.transparent),
+ 
       body: _getPage(_bottomNavIndex),
       // extendBody: true,
       // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
@@ -66,18 +58,18 @@ class _TabBarScreenState extends State<TabBarScreen> {
                 icon: const Icon(Icons.favorite),
                 color: _bottomNavIndex == 1 ? const Color(0xffF4A42A) : const Color(0xff77778E),
                 onPressed: () {
-                  _onTap(01);
+                  _onTap(1);  
                 },
               ),
-              SizedBox(width: Get.width * 0.09),
+              SizedBox(width: Get.width * 0.09), 
               Column(
                 children: [
                   IconButton(
                     icon: const Icon(Icons.dashboard_rounded),
                     color: _bottomNavIndex == 1 ? const Color(0xffF4A42A) : const Color(0xff77778E),
-                    onPressed: () {
-                      _onTap(2);
-                    },
+                    onPressed: () {                                           
+                      _onTap(2);         
+                    },          
                   ),
                 ],
               ),
@@ -101,7 +93,7 @@ class _TabBarScreenState extends State<TabBarScreen> {
 Widget _getPage(int page) {
   switch (page) {
     case 0:
-      return splashScreen();
+      return const SplashScreen();
     case 1:
       return Container();
     case 2:

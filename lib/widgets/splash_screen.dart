@@ -1,14 +1,14 @@
 import 'package:final_shout/widgets/comman_widget.dart';
 import 'package:flutter/material.dart';
 
-class splashScreen extends StatefulWidget {
-  splashScreen({Key? key}) : super(key: key);
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({Key? key}) : super(key: key);
 
   @override
-  State<splashScreen> createState() => _nameState();
+  State<SplashScreen> createState() => _SplashScreen();
 }
 
-class _nameState extends State<splashScreen> {
+class _SplashScreen extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(

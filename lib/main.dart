@@ -1,4 +1,3 @@
-import 'package:final_shout/widgets/splash_screen.dart';
 import 'package:final_shout/widgets/tab_bar.dart';
 import 'package:flutter/material.dart';
 
