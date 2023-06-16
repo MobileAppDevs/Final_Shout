@@ -21,14 +21,14 @@ class _ThirdScreenState extends State<ThirdScreen> {
         onPageFinished: (String url) {},
         onWebResourceError: (WebResourceError error) {},
         onNavigationRequest: (NavigationRequest request) {
-          if (request.url.startsWith('https://watch.finalshout.org/on-demand/')) {
+          if (request.url.startsWith('https://finalshout.org/donation')) {
             return NavigationDecision.prevent;
           }
           return NavigationDecision.navigate;
         },
       ),
     )
-    ..loadRequest(Uri.parse('https://watch.finalshout.org/on-demand/'));
+    ..loadRequest(Uri.parse('https://finalshout.org/donation'));
   @override
   Widget build(BuildContext context) {
     return Scaffold(body: WebViewWidget(controller: controller));

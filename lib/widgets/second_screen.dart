@@ -21,14 +21,14 @@ class _SecondScreenState extends State<SecondScreen> {
         onPageFinished: (String url) {},
         onWebResourceError: (WebResourceError error) {},
         onNavigationRequest: (NavigationRequest request) {
-          if (request.url.startsWith('https://watch.finalshout.org/')) {
+          if (request.url.startsWith('https://watch.finalshout.org/contact-us/')) {
             return NavigationDecision.prevent;
           }
           return NavigationDecision.navigate;
         },
       ),
     )
-    ..loadRequest(Uri.parse('https://watch.finalshout.org/'));
+    ..loadRequest(Uri.parse('https://watch.finalshout.org/contact-us/'));
   @override
   Widget build(BuildContext context) {
     return Scaffold(body: WebViewWidget(controller: controller));

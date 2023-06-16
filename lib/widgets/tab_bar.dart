@@ -1,9 +1,8 @@
-import 'package:final_shout/widgets/controller.dart';
 import 'package:final_shout/widgets/first_screen.dart';
 import 'package:final_shout/widgets/forth_screen.dart';
 
 import 'package:final_shout/widgets/second_screen.dart';
-import 'package:final_shout/widgets/splash_screen.dart';
+import 'package:final_shout/widgets/home_screen.dart';
 import 'package:final_shout/widgets/third_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
@@ -22,95 +21,107 @@ class _TabBarScreenState extends State<TabBarScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      resizeToAvoidBottomInset: false,
-
-      body: _getPage(bottomNavIndex),
-      // extendBody: true,
-      // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      bottomNavigationBar: BottomAppBar(
-        //bottom navigation bar on scaffold
-        color: Colors.white.withOpacity(0.8),
-        // shape: const CircularNotchedRectangle(), //shape of notch
-        // notchMargin: 10, //notche margin between floating button and bottom appbar
-        child: SizedBox(
-          height: Get.height * 0.06,
-          child: Row(
-            //children inside bottom appbar
-            // mainAxisSize: MainAxisSize.max,
-            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              SizedBox(
-                height: Get.height * 0.06,
-              ),
-              Column(
-                children: [
-                  IconButton(
-                    icon: Icon(iconList[0]),
-                    color: bottomNavIndex == 0 ? const Color(0xffF4A42A) : const Color(0xff77778E),
-                    onPressed: () {
-                      _onTap(0);
-                    },
-                  ),
-                ],
-              ),
-              SizedBox(
-                width: Get.height * 0.03,
-              ),
-              Column(
-                children: [
-                  IconButton(
-                    icon: Icon(iconList[1]),
-                    color: bottomNavIndex == 1 ? const Color(0xffF4A42A) : const Color(0xff77778E),
-                    onPressed: () {
-                      _onTap(1);
-                    },
-                  ),
-                ],
-              ),
-              SizedBox(
-                width: Get.height * 0.03,
-              ),
-              Column(
-                children: [
-                  IconButton(
-                    icon: Icon(iconList[2]),
-                    color: bottomNavIndex == 2 ? const Color(0xffF4A42A) : const Color(0xff77778E),
-                    onPressed: () {
-                      _onTap(2);
-                    },
-                  ),
-                ],
-              ),
-              SizedBox(
-                width: Get.height * 0.03,
-              ),
-              Column(
-                children: [
-                  IconButton(
-                    icon: Icon(iconList[3]),
-                    color: bottomNavIndex == 3 ? const Color(0xffF4A42A) : const Color(0xff77778E),
-                    onPressed: () {
-                      _onTap(3);
-                    },
-                  ),
-                ],
-              ),
-              SizedBox(
-                width: Get.height * 0.025,
-              ),
-              Column(
-                children: [
-                  IconButton(
-                    icon: Icon(iconList[4]),
-                    color: bottomNavIndex == 4 ? const Color(0xffF4A42A) : const Color(0xff77778E),
-                    onPressed: () {
-                      _onTap(4);
-                    },
-                  ),
-                ],
-              ),
-            ],
+    return SafeArea(
+      child: Scaffold(
+        resizeToAvoidBottomInset: false,
+        backgroundColor: Colors.white,
+        floatingActionButton: FloatingActionButton(
+            onPressed: () {
+              _onTap(0);
+            },
+            elevation: 0,
+            backgroundColor: Colors.transparent,
+            child: Image.asset('assets/images/Group 38877.png', height: 70)),
+        body: _getPage(bottomNavIndex),
+        extendBody: true,
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+        bottomNavigationBar: BottomAppBar(
+          // color: Colors.white.withOpacity(0.8),
+          shape: const CircularNotchedRectangle(), //shape of notch
+          notchMargin: 0,
+          color: Colors.white.withOpacity(0.8),
+          child: SizedBox(
+            height: Get.height * 0.06,
+            child: Row(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Stack(
+                  clipBehavior: Clip.none,
+                  children: [
+                    Column(
+                      children: [
+                        IconButton(
+                          icon: Image.asset("assets/images/VIDEO-ON-DEMAND.png", height: 25, width: 25),
+                          color: bottomNavIndex == 1 ? const Color(0xffF4A42A) : const Color(0xff77778E),
+                          onPressed: () {
+                            _onTap(1);
+                          },
+                        ),
+                      ],
+                    ),
+                    const Positioned(left: 6, top: 37, child: Text("Demand"))
+                  ],
+                ),
+                SizedBox(
+                  width: Get.height * 0.03,
+                ),
+                Stack(
+                  clipBehavior: Clip.none,
+                  children: [
+                    Column(
+                      children: [
+                        IconButton(
+                          icon: Image.asset("assets/images/contact.png", height: 25, width: 25),
+                          color: bottomNavIndex == 2 ? const Color(0xffF4A42A) : const Color(0xff77778E),
+                          onPressed: () {
+                            _onTap(2);
+                          },
+                        ),
+                      ],
+                    ),
+                    const Positioned(left: 6, top: 37, child: Text("Contact"))
+                  ],
+                ),
+                SizedBox(width: Get.height * 0.03),
+                SizedBox(width: Get.height * 0.03),
+                Stack(
+                  children: [
+                    Column(
+                      children: [
+                        IconButton(
+                          icon: Image.asset("assets/images/DONATE-NOW.png", height: 25, width: 25),
+                          color: bottomNavIndex == 3 ? const Color(0xffF4A42A) : const Color(0xff77778E),
+                          onPressed: () {
+                            _onTap(3);
+                          },
+                        ),
+                      ],
+                    ),
+                    const Positioned(left: 6, top: 37, child: Text("Donate"))
+                  ],
+                ),
+                SizedBox(
+                  width: Get.height * 0.025,
+                ),
+                Stack(
+                  children: [
+                    Column(
+                      children: [
+                        IconButton(
+                          icon: Image.asset("assets/images/logoo-live-2.png", height: 25, width: 25),
+                          color: bottomNavIndex == 4 ? const Color(0xffF4A42A) : const Color(0xff77778E),
+                          onPressed: () {
+                            _onTap(4);
+                          },
+                        ),
+                      ],
+                    ),
+                    const Positioned(left: 6, top: 37, child: Text("Shows"))
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),
@@ -127,7 +138,7 @@ class _TabBarScreenState extends State<TabBarScreen> {
 Widget _getPage(int page) {
   switch (page) {
     case 0:
-      return const SplashScreen();
+      return const HomeScreen();
     case 1:
       return const FirstScreen();
     case 2:
@@ -137,6 +148,6 @@ Widget _getPage(int page) {
     case 4:
       return const ForthScreen();
     default:
-      return const SplashScreen();
+      return const HomeScreen();
   }
 }

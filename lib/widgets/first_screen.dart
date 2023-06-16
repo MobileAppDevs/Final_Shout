@@ -9,6 +9,8 @@ class FirstScreen extends StatefulWidget {
 }
 
 class _FirstScreenState extends State<FirstScreen> {
+  bool isLoading = true;
+
   // Controller indexcontroller = Controller();
   WebViewController controller = WebViewController()
     ..setJavaScriptMode(JavaScriptMode.unrestricted)
@@ -22,14 +24,14 @@ class _FirstScreenState extends State<FirstScreen> {
         onPageFinished: (String url) {},
         onWebResourceError: (WebResourceError error) {},
         onNavigationRequest: (NavigationRequest request) {
-          if (request.url.startsWith('https://watch.finalshout.org/contact-us/')) {
+          if (request.url.startsWith('https://watch.finalshout.org/on-demand/')) {
             return NavigationDecision.prevent;
           }
           return NavigationDecision.navigate;
         },
       ),
     )
-    ..loadRequest(Uri.parse('https://watch.finalshout.org/contact-us/'));
+    ..loadRequest(Uri.parse('https://watch.finalshout.org/on-demand/'));
   @override
   Widget build(BuildContext context) {
     return Scaffold(body: WebViewWidget(controller: controller));
