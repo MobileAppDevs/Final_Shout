@@ -24,14 +24,14 @@ class _Channel2State extends State<Channel2> {
         onPageFinished: (String url) {},
         onWebResourceError: (WebResourceError error) {},
         onNavigationRequest: (NavigationRequest request) {
-          if (request.url.startsWith('https://watch.finalshout.org/on-demand/')) {
+          if (request.url.startsWith('https://watch.finalshout.org/final-shouts-kids/')) {
             return NavigationDecision.prevent;
           }
           return NavigationDecision.navigate;
         },
       ),
     )
-    ..loadRequest(Uri.parse('https://watch.finalshout.org/on-demand/'));
+    ..loadRequest(Uri.parse('https://watch.finalshout.org/final-shouts-kids/'));
   @override
   Widget build(BuildContext context) {
     return Scaffold(body: WebViewWidget(controller: controller));

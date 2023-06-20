@@ -24,14 +24,14 @@ class _Channel5State extends State<Channel5> {
         onPageFinished: (String url) {},
         onWebResourceError: (WebResourceError error) {},
         onNavigationRequest: (NavigationRequest request) {
-          if (request.url.startsWith('https://watch.finalshout.org/on-demand/')) {
+          if (request.url.startsWith('https://watch.finalshout.org/final-shouts-landscape/')) {
             return NavigationDecision.prevent;
           }
           return NavigationDecision.navigate;
         },
       ),
     )
-    ..loadRequest(Uri.parse('https://watch.finalshout.org/on-demand/'));
+    ..loadRequest(Uri.parse('https://watch.finalshout.org/final-shouts-landscape/'));
   @override
   Widget build(BuildContext context) {
     return Scaffold(body: WebViewWidget(controller: controller));
