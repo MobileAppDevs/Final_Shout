@@ -56,7 +56,7 @@ class _SplashScreen extends State<HomeScreen> {
                       MaterialPageRoute(builder: (context) => const Channel1()),
                     );
                   },
-                  text: 'Channel 1',
+                  text: "Final Shout's TV",
                   backgroundColor: Colors.white,
                   image: "assets/images/1-icon.png"),
               Comman.customButton(
@@ -66,7 +66,7 @@ class _SplashScreen extends State<HomeScreen> {
                       MaterialPageRoute(builder: (context) => const Channel2()),
                     );
                   },
-                  text: 'Channel 2',
+                  text: "Final Shout's Kids",
                   backgroundColor: Colors.white,
                   image: "assets/images/2-icon.png"),
               Comman.customButton(
@@ -76,7 +76,7 @@ class _SplashScreen extends State<HomeScreen> {
                       MaterialPageRoute(builder: (context) => const Channel3()),
                     );
                   },
-                  text: 'Channel 3',
+                  text: "Final Shout's Youth",
                   backgroundColor: Colors.white,
                   image: "assets/images/3-icon.png"),
             ],
@@ -94,7 +94,7 @@ class _SplashScreen extends State<HomeScreen> {
                     MaterialPageRoute(builder: (context) => const Channel4()),
                   );
                 },
-                text: 'Channel 4',
+                text: "Final Shout's Health",
                 backgroundColor: Colors.white,
                 image: "assets/images/4-icon.png",
               ),
@@ -105,7 +105,7 @@ class _SplashScreen extends State<HomeScreen> {
                       MaterialPageRoute(builder: (context) => const Channel5()),
                     );
                   },
-                  text: 'Channel 5',
+                  text: "Final Shout's Landscape",
                   backgroundColor: Colors.white,
                   image: "assets/images/5-icon.png"),
             ],

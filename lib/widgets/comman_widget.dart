@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 class Comman {
   static customButton({required String text, required backgroundColor, required String image, required Function onPressed}) {
     return SizedBox(
-      width: 100,
-      height: 100,
+      width: 110,
+      height: 105,
       child: ElevatedButton(
         onPressed: () {
           onPressed();
@@ -23,9 +23,14 @@ class Comman {
             children: [
               Image.asset(image),
               const SizedBox(height: 4),
-              Text(
-                text,
-                style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: Colors.black),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    text,
+                    style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: Colors.black),
+                  ),
+                ],
               ),
             ],
           ),
