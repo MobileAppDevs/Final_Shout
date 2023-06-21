@@ -4,7 +4,6 @@ import 'package:final_shout/widgets/channel3.dart';
 import 'package:final_shout/widgets/channel4.dart';
 import 'package:final_shout/widgets/channel5.dart';
 import 'package:final_shout/widgets/comman_widget.dart';
-import 'package:final_shout/widgets/notification_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -19,33 +18,59 @@ class _SplashScreen extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 15.0),
-            child: InkWell(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const NotificationScreen()),
-                );
-              },
-              child: Image.asset(
-                "assets/images/support.png",
-                height: 45,
-                width: 45,
-              ),
-            ),
-          )
-        ]),
+        backgroundColor: Colors.green.withOpacity(0.3),
+        // appBar: AppBar(backgroundColor: Colors.green.withOpacity(0.3), actions: [
+        //   Padding(
+        //     padding: const EdgeInsets.only(right: 15.0),
+        //     child: InkWell(
+        //       onTap: () {
+        //         Navigator.push(
+        //           context,
+        //           MaterialPageRoute(builder: (context) => const NotificationScreen()),
+        //         );
+        //       },
+        //       child: Image.asset(
+        //         "assets/images/support.png",
+        //         height: 45,
+        //         width: 45,
+        //       ),
+        //     ),
+        //   )
+        // ]),
         body: Column(children: [
-          const SizedBox(height: 20),
+          Padding(
+            padding: const EdgeInsets.only(top: 8.0, right: 8),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                InkWell(
+                  onTap: () {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (context) => const NotificationScreen()),
+                    // );
+                  },
+                  child: Image.asset(
+                    "assets/images/support.png",
+                    height: 45,
+                    width: 45,
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          const SizedBox(height: 25),
           Center(
               child: Image.asset(
-            "assets/images/logo.jpg",
+            "assets/images/logofinalshot.bin.png",
             height: 170,
             width: 170,
           )),
-          const Expanded(child: SizedBox()),
+          const SizedBox(
+            height: 80,
+          ),
+          // const Expanded(child: SizedBox()),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -56,7 +81,8 @@ class _SplashScreen extends State<HomeScreen> {
                       MaterialPageRoute(builder: (context) => const Channel1()),
                     );
                   },
-                  text: "Final Shout's TV",
+                  text: "Final Shout's",
+                  text2: "TV",
                   backgroundColor: Colors.white,
                   image: "assets/images/1-icon.png"),
               Comman.customButton(
@@ -66,7 +92,8 @@ class _SplashScreen extends State<HomeScreen> {
                       MaterialPageRoute(builder: (context) => const Channel2()),
                     );
                   },
-                  text: "Final Shout's Kids",
+                  text: "Final Shout's",
+                  text2: "Kids",
                   backgroundColor: Colors.white,
                   image: "assets/images/2-icon.png"),
               Comman.customButton(
@@ -76,13 +103,14 @@ class _SplashScreen extends State<HomeScreen> {
                       MaterialPageRoute(builder: (context) => const Channel3()),
                     );
                   },
-                  text: "Final Shout's Youth",
+                  text: "Final Shout's",
+                  text2: " Youth",
                   backgroundColor: Colors.white,
                   image: "assets/images/3-icon.png"),
             ],
           ),
           const SizedBox(
-            height: 20,
+            height: 25,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -94,7 +122,8 @@ class _SplashScreen extends State<HomeScreen> {
                     MaterialPageRoute(builder: (context) => const Channel4()),
                   );
                 },
-                text: "Final Shout's Health",
+                text: "Final Shout's",
+                text2: " Health",
                 backgroundColor: Colors.white,
                 image: "assets/images/4-icon.png",
               ),
@@ -105,7 +134,8 @@ class _SplashScreen extends State<HomeScreen> {
                       MaterialPageRoute(builder: (context) => const Channel5()),
                     );
                   },
-                  text: "Final Shout's Landscape",
+                  text: "Final Shout's",
+                  text2: "Landscape",
                   backgroundColor: Colors.white,
                   image: "assets/images/5-icon.png"),
             ],
@@ -113,13 +143,6 @@ class _SplashScreen extends State<HomeScreen> {
           const Expanded(child: SizedBox()),
         ]),
       ),
-    );
-  }
-
-  onClick() {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => const Channel1()),
     );
   }
 }
