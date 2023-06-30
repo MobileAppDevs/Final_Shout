@@ -145,7 +145,7 @@ class _SplashScreen extends State<HomeScreen> {
                   // );
                 },
                 text: "Final Shout's",
-                text2: " therapy",
+                text2: " Therapy",
                 backgroundColor: Colors.white,
                 image: "assets/images/6-icon.png",
               ),
