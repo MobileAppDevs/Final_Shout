@@ -18,7 +18,7 @@ class _SplashScreen extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.green.withOpacity(0.3),
+        backgroundColor: const Color(0xffBC2F26),
         // appBar: AppBar(backgroundColor: Colors.green.withOpacity(0.3), actions: [
         //   Padding(
         //     padding: const EdgeInsets.only(right: 15.0),
@@ -115,19 +115,18 @@ class _SplashScreen extends State<HomeScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Comman.customresizeButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const Channel4()),
-                  );
-                },
-                text: "Final Shout's",
-                text2: " Health",
-                backgroundColor: Colors.white,
-                image: "assets/images/4-icon.png",
-              ),
-              Comman.customresizeButton(
+              Comman.customButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Channel4()),
+                    );
+                  },
+                  text: "Final Shout's",
+                  text2: " Health",
+                  backgroundColor: Colors.white,
+                  image: "assets/images/4-icon.png"),
+              Comman.customButton(
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -135,9 +134,44 @@ class _SplashScreen extends State<HomeScreen> {
                     );
                   },
                   text: "Final Shout's",
-                  text2: "Landscape",
+                  text2: " Landscape",
                   backgroundColor: Colors.white,
                   image: "assets/images/5-icon.png"),
+              Comman.customButton(
+                onPressed: () {
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(builder: (context) => const Channel5()),
+                  // );
+                },
+                text: "Final Shout's",
+                text2: " therapy",
+                backgroundColor: Colors.white,
+                image: "assets/images/6-icon.png",
+              ),
+              // Comman.customresizeButton(
+              //   onPressed: () {
+              //     Navigator.push(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => const Channel4()),
+              //     );
+              //   },
+              //   text: "Final Shout's",
+              //   text2: " Health",
+              //   backgroundColor: Colors.white,
+              //   image: "assets/images/4-icon.png",
+              // ),
+              // Comman.customresizeButton(
+              //     onPressed: () {
+              //       Navigator.push(
+              //         context,
+              //         MaterialPageRoute(builder: (context) => const Channel5()),
+              //       );
+              //     },
+              //     text: "Final Shout's",
+              //     text2: "Landscape",
+              //     backgroundColor: Colors.white,
+              //     image: "assets/images/5-icon.png"),
             ],
           ),
           const Expanded(child: SizedBox()),

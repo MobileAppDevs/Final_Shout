@@ -17,31 +17,33 @@ class Comman {
           backgroundColor: backgroundColor, // Set the button's background color
           textStyle: const TextStyle(color: Colors.white), // Set the button's text color
         ),
-        child: Padding(
-          padding: const EdgeInsets.only(top: 12.0),
-          child: Column(
-            children: [
-              Image.asset(image),
-              const SizedBox(height: 5),
-              Column(
-                //  mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Center(
-                    child: Text(
-                      textAlign: TextAlign.center,
-                      text,
-                      style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: Colors.black),
-                    ),
-                  ),
-                  Text(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              image,
+              height: 50,
+              width: 50,
+            ),
+            const SizedBox(height: 5),
+            Column(
+              //  mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Center(
+                  child: Text(
                     textAlign: TextAlign.center,
-                    text2,
+                    text,
                     style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: Colors.black),
                   ),
-                ],
-              ),
-            ],
-          ),
+                ),
+                Text(
+                  textAlign: TextAlign.center,
+                  text2,
+                  style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: Colors.black),
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     );
