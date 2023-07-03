@@ -1,3 +1,4 @@
+import 'package:final_shout/widgets/Teen.dart';
 import 'package:final_shout/widgets/channel1.dart';
 import 'package:final_shout/widgets/channel2.dart';
 import 'package:final_shout/widgets/channel3.dart';
@@ -18,7 +19,7 @@ class _SplashScreen extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: const Color(0xffBC2F26),
+        backgroundColor: const Color(0xff00BFFF),
         // appBar: AppBar(backgroundColor: Colors.green.withOpacity(0.3), actions: [
         //   Padding(
         //     padding: const EdgeInsets.only(right: 15.0),
@@ -82,7 +83,7 @@ class _SplashScreen extends State<HomeScreen> {
                     );
                   },
                   text: "Final Shout's",
-                  text2: "TV",
+                  text2: "Family",
                   backgroundColor: Colors.white,
                   image: "assets/images/1-icon.png"),
               Comman.customButton(
@@ -97,6 +98,26 @@ class _SplashScreen extends State<HomeScreen> {
                   backgroundColor: Colors.white,
                   image: "assets/images/2-icon.png"),
               Comman.customButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const TeenPage()),
+                  );
+                },
+                text: "Final Shout's",
+                text2: " Teen",
+                backgroundColor: Colors.white,
+                image: "assets/images/6-icon.png",
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 25,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Comman.customButton(
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -107,14 +128,6 @@ class _SplashScreen extends State<HomeScreen> {
                   text2: " Youth",
                   backgroundColor: Colors.white,
                   image: "assets/images/3-icon.png"),
-            ],
-          ),
-          const SizedBox(
-            height: 25,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
               Comman.customButton(
                   onPressed: () {
                     Navigator.push(
@@ -137,18 +150,7 @@ class _SplashScreen extends State<HomeScreen> {
                   text2: " Landscape",
                   backgroundColor: Colors.white,
                   image: "assets/images/5-icon.png"),
-              Comman.customButton(
-                onPressed: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(builder: (context) => const Channel5()),
-                  // );
-                },
-                text: "Final Shout's",
-                text2: " Therapy",
-                backgroundColor: Colors.white,
-                image: "assets/images/6-icon.png",
-              ),
+
               // Comman.customresizeButton(
               //   onPressed: () {
               //     Navigator.push(

@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-class Channel1 extends StatefulWidget {
-  const Channel1({
+class TeenPage extends StatefulWidget {
+  const TeenPage({
     super.key,
   });
 
   @override
-  State<Channel1> createState() => _Channel1State();
+  State<TeenPage> createState() => _TeenPageState();
 }
 
 int progress = 0;
 
-class _Channel1State extends State<Channel1> {
+class _TeenPageState extends State<TeenPage> {
   late WebViewController controller;
   double progressValue = 0.0;
 
@@ -41,13 +41,13 @@ class _Channel1State extends State<Channel1> {
         },
         onWebResourceError: (WebResourceError error) {},
         onNavigationRequest: (NavigationRequest request) {
-          if (request.url.startsWith('https://watch.finalshout.org/final-shouts-family/')) {
+          if (request.url.startsWith('https://watch.finalshout.org/final-shouts-teen/')) {
             return NavigationDecision.prevent;
           }
           return NavigationDecision.navigate;
         },
       ))
-      ..loadRequest(Uri.parse('https://watch.finalshout.org/final-shouts-family/'));
+      ..loadRequest(Uri.parse('https://watch.finalshout.org/final-shouts-teen/'));
   }
 
   @override
