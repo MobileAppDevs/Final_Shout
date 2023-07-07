@@ -41,13 +41,13 @@ class _Channel3State extends State<Channel3> {
         },
         onWebResourceError: (WebResourceError error) {},
         onNavigationRequest: (NavigationRequest request) {
-          if (request.url.startsWith('https://watch.finalshout.org/final-shouts-youth/')) {
+          if (request.url.startsWith('https://watch.finalshout.org/youth/')) {
             return NavigationDecision.prevent;
           }
           return NavigationDecision.navigate;
         },
       ))
-      ..loadRequest(Uri.parse('https://watch.finalshout.org/final-shouts-youth/'));
+      ..loadRequest(Uri.parse('https://watch.finalshout.org/youth/'));
   }
 
   @override

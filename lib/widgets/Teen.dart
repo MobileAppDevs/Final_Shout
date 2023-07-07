@@ -41,13 +41,13 @@ class _TeenPageState extends State<TeenPage> {
         },
         onWebResourceError: (WebResourceError error) {},
         onNavigationRequest: (NavigationRequest request) {
-          if (request.url.startsWith('https://watch.finalshout.org/final-shouts-teen/')) {
+          if (request.url.startsWith('https://watch.finalshout.org/teen/')) {
             return NavigationDecision.prevent;
           }
           return NavigationDecision.navigate;
         },
       ))
-      ..loadRequest(Uri.parse('https://watch.finalshout.org/final-shouts-teen/'));
+      ..loadRequest(Uri.parse('https://watch.finalshout.org/teen/'));
   }
 
   @override

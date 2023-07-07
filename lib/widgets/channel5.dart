@@ -41,13 +41,13 @@ class _Channel5State extends State<Channel5> {
         },
         onWebResourceError: (WebResourceError error) {},
         onNavigationRequest: (NavigationRequest request) {
-          if (request.url.startsWith('https://watch.finalshout.org/final-shouts-landscape/')) {
+          if (request.url.startsWith('https://watch.finalshout.org/landscape/')) {
             return NavigationDecision.prevent;
           }
           return NavigationDecision.navigate;
         },
       ))
-      ..loadRequest(Uri.parse('https://watch.finalshout.org/final-shouts-landscape/'));
+      ..loadRequest(Uri.parse('https://watch.finalshout.org/landscape/'));
   }
 
   @override
