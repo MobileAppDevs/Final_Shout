@@ -5,6 +5,7 @@ import 'package:final_shout/widgets/second_screen.dart';
 import 'package:final_shout/widgets/home_screen.dart';
 import 'package:final_shout/widgets/third_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 
@@ -26,12 +27,22 @@ class _TabBarScreenState extends State<TabBarScreen> {
         resizeToAvoidBottomInset: false,
         backgroundColor: Colors.white,
         floatingActionButton: FloatingActionButton(
-            onPressed: () {
-              _onTap(0);
-            },
-            elevation: 0,
-            backgroundColor: Colors.transparent,
-            child: Image.asset('assets/images/Group 38877.png', height: 70)),
+          onPressed: () {
+            _onTap(0);
+          },
+          elevation: 0,
+          backgroundColor: Colors.transparent,
+          child: CircleAvatar(
+            radius: 30,
+            backgroundColor: Colors.orange,
+            child: SvgPicture.asset(
+              'assets/images/home_icn.svg',
+              color: Colors.white,
+            ),
+          ),
+        ),
+
+        // SvgPicture.asset('assets/images/home_icn.svg', height: 70)),
         body: _getPage(bottomNavIndex),
         extendBody: true,
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
@@ -60,7 +71,7 @@ class _TabBarScreenState extends State<TabBarScreen> {
                         ),
                       ],
                     ),
-                    const Positioned(left: 6, top: 37, child: Text("Demand"))
+                    const Positioned(left: 6, top: 37, child: Text("Counseling"))
                   ],
                 ),
                 SizedBox(

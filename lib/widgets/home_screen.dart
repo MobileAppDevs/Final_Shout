@@ -64,12 +64,12 @@ class _SplashScreen extends State<HomeScreen> {
           const SizedBox(height: 25),
           Center(
               child: Image.asset(
-            "assets/images/logofinalshot.bin.png",
+            "assets/images/logoSA.png",
             height: 170,
             width: 170,
           )),
           const SizedBox(
-            height: 80,
+            height: 60,
           ),
           // const Expanded(child: SizedBox()),
           Row(
@@ -112,7 +112,7 @@ class _SplashScreen extends State<HomeScreen> {
             ],
           ),
           const SizedBox(
-            height: 25,
+            height: 20,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -176,6 +176,7 @@ class _SplashScreen extends State<HomeScreen> {
               //     image: "assets/images/5-icon.png"),
             ],
           ),
+
           const Expanded(child: SizedBox()),
         ]),
       ),
