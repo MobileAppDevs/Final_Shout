@@ -80,13 +80,13 @@ class _FirstScreenState extends State<FirstScreen> {
         },
         onWebResourceError: (WebResourceError error) {},
         onNavigationRequest: (NavigationRequest request) {
-          if (request.url.startsWith('https://watch.finalshout.org/on-demand/')) {
+          if (request.url.startsWith('https://finalshout.org/counseling-therapy')) {
             return NavigationDecision.prevent;
           }
           return NavigationDecision.navigate;
         },
       ))
-      ..loadRequest(Uri.parse('https://watch.finalshout.org/on-demand/'));
+      ..loadRequest(Uri.parse('https://finalshout.org/counseling-therapy'));
   }
 
   @override

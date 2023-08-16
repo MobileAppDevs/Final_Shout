@@ -7,6 +7,8 @@ import 'package:final_shout/widgets/channel5.dart';
 import 'package:final_shout/widgets/comman_widget.dart';
 import 'package:flutter/material.dart';
 
+import 'notification_screen.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -46,10 +48,10 @@ class _SplashScreen extends State<HomeScreen> {
               children: [
                 InkWell(
                   onTap: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context) => const NotificationScreen()),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const NotificationScreen()),
+                    );
                   },
                   child: Image.asset(
                     "assets/images/support.png",

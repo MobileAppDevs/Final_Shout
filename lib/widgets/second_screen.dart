@@ -41,13 +41,14 @@ class _SecondScreenState extends State<SecondScreen> {
         },
         onWebResourceError: (WebResourceError error) {},
         onNavigationRequest: (NavigationRequest request) {
-          if (request.url.startsWith('https://watch.finalshout.org/contact-us/')) {
+          if (request.url.startsWith('https://finalshout.org/contact-us ')) {
+            // https://watch.finalshout.org/contact-us/
             return NavigationDecision.prevent;
           }
           return NavigationDecision.navigate;
         },
       ))
-      ..loadRequest(Uri.parse('https://watch.finalshout.org/contact-us/'));
+      ..loadRequest(Uri.parse('https://finalshout.org/contact-us'));
   }
 
   @override
