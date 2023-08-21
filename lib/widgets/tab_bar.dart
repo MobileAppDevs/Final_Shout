@@ -18,7 +18,13 @@ class TabBarScreen extends StatefulWidget {
 
 class _TabBarScreenState extends State<TabBarScreen> {
   int bottomNavIndex = 0;
-  final iconList = <IconData>[Icons.home, Icons.favorite_outline, Icons.dashboard_rounded, Icons.settings, Icons.holiday_village];
+  final iconList = <IconData>[
+    Icons.home,
+    Icons.favorite_outline,
+    Icons.dashboard_rounded,
+    Icons.settings,
+    Icons.holiday_village
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -47,9 +53,10 @@ class _TabBarScreenState extends State<TabBarScreen> {
         extendBody: true,
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         bottomNavigationBar: BottomAppBar(
+          padding: const EdgeInsets.only(right: 10, left: 10),
           // color: Colors.white.withOpacity(0.8),
-          shape: const CircularNotchedRectangle(), //shape of notch
-          notchMargin: 0,
+          // shape: const CircularNotchedRectangle(), //shape of notch
+          // notchMargin: 0,
           color: Colors.white.withOpacity(0.8),
           child: SizedBox(
             height: Get.height * 0.06,
@@ -63,6 +70,7 @@ class _TabBarScreenState extends State<TabBarScreen> {
                     Column(
                       children: [
                         IconButton(
+                          padding: EdgeInsets.zero,
                           icon: Image.asset("assets/images/VIDEO-ON-DEMAND.png", height: 25, width: 25),
                           color: bottomNavIndex == 1 ? const Color(0xffF4A42A) : const Color(0xff77778E),
                           onPressed: () {
@@ -71,7 +79,7 @@ class _TabBarScreenState extends State<TabBarScreen> {
                         ),
                       ],
                     ),
-                    const Positioned(left: 6, top: 37, child: Text("Counseling"))
+                    const Positioned(left: 3, top: 37, child: Text("Counseling"))
                   ],
                 ),
                 SizedBox(
@@ -109,7 +117,7 @@ class _TabBarScreenState extends State<TabBarScreen> {
                         ),
                       ],
                     ),
-                    const Positioned(left: 6, top: 37, child: Text("Donate"))
+                    const Positioned(left: 2, top: 37, child: Text("Donate"))
                   ],
                 ),
                 SizedBox(

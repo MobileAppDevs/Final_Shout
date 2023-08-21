@@ -96,7 +96,7 @@ class _SplashScreen extends State<HomeScreen> {
                     );
                   },
                   text: "Final Shout's",
-                  text2: "Kids",
+                  text2: "Children",
                   backgroundColor: Colors.white,
                   image: "assets/images/2-icon.png"),
               Comman.customButton(
