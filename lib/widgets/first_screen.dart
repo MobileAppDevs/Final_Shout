@@ -80,7 +80,7 @@ class _FirstScreenState extends State<FirstScreen> {
         },
         onWebResourceError: (WebResourceError error) {},
         onNavigationRequest: (NavigationRequest request) {
-          if (request.url.startsWith('https://finalshout.org/counseling-therapy')) {
+          if (request.url.startsWith('https://www.youtube.com/')) {
             return NavigationDecision.prevent;
           }
           return NavigationDecision.navigate;

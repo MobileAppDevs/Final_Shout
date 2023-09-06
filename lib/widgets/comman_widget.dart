@@ -1,22 +1,18 @@
 import 'package:flutter/material.dart';
 
 class Comman {
-  static customButton({required String text, required backgroundColor, required String image, required Function onPressed, required String text2}) {
+  static customButton(
+      {required String text,
+      required backgroundColor,
+      required String image,
+      required Function onPressed,
+      required String text2}) {
     return Card(
       elevation: 40,
       color: Colors.black,
       child: SizedBox(
         width: 110,
         height: 125,
-        // decoration: const BoxDecoration(
-        //   boxShadow: [
-        //     BoxShadow(
-        //       color: Colors.black,
-        //       blurRadius: 30,
-        //       offset: Offset(0, 1), // Shadow position
-        //     ),
-        //   ],
-        // ),
         child: ElevatedButton(
           onPressed: () {
             onPressed();
@@ -26,8 +22,10 @@ class Comman {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),
-            backgroundColor: backgroundColor, // Set the button's background color
-            textStyle: const TextStyle(color: Colors.white), // Set the button's text color
+            backgroundColor:
+                backgroundColor, // Set the button's background color
+            textStyle: const TextStyle(
+                color: Colors.white), // Set the button's text color
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -45,13 +43,19 @@ class Comman {
                     child: Text(
                       textAlign: TextAlign.center,
                       text,
-                      style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: Colors.black),
+                      style: const TextStyle(
+                          fontSize: 11,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.black),
                     ),
                   ),
                   Text(
                     textAlign: TextAlign.center,
                     text2,
-                    style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: Colors.black),
+                    style: const TextStyle(
+                        fontSize: 11,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.black),
                   ),
                 ],
               ),
@@ -62,7 +66,12 @@ class Comman {
     );
   }
 
-  static customresizeButton({required String text, required Function onPressed, required backgroundColor, required String image, required String text2}) {
+  static customresizeButton(
+      {required String text,
+      required Function onPressed,
+      required backgroundColor,
+      required String image,
+      required String text2}) {
     return SizedBox(
       width: 160,
       height: 125,
@@ -76,7 +85,8 @@ class Comman {
             borderRadius: BorderRadius.circular(10),
           ),
           backgroundColor: backgroundColor, // Set the button's background color
-          textStyle: const TextStyle(color: Colors.white), // Set the button's text color
+          textStyle: const TextStyle(
+              color: Colors.white), // Set the button's text color
         ),
         child: Padding(
           padding: const EdgeInsets.only(top: 12.0),
@@ -90,11 +100,17 @@ class Comman {
               const SizedBox(height: 5),
               Text(
                 text,
-                style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: Colors.black),
+                style: const TextStyle(
+                    fontSize: 11,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.black),
               ),
               Text(
                 text2,
-                style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: Colors.black),
+                style: const TextStyle(
+                    fontSize: 11,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.black),
               ),
             ],
           ),
@@ -102,11 +118,4 @@ class Comman {
       ),
     );
   }
-
-  // static customContainer() {
-  //   const SizedBox(
-  //     height: 50,
-  //     width: 100,
-  //   );
-  // }
 }

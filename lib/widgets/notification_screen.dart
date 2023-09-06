@@ -21,8 +21,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
         onPageFinished: (String url) {},
         onWebResourceError: (WebResourceError error) {},
         onNavigationRequest: (NavigationRequest request) {
-          if (request.url.startsWith('https://finalshout.org/')) {
-            // https://watch.finalshout.org/contact-us/
+          if (request.url.startsWith('https://www.youtube.com/')) {
             return NavigationDecision.prevent;
           }
           return NavigationDecision.navigate;

@@ -71,15 +71,19 @@ class _TabBarScreenState extends State<TabBarScreen> {
                       children: [
                         IconButton(
                           padding: EdgeInsets.zero,
-                          icon: Image.asset("assets/images/VIDEO-ON-DEMAND.png", height: 25, width: 25),
-                          color: bottomNavIndex == 1 ? const Color(0xffF4A42A) : const Color(0xff77778E),
+                          icon: Image.asset("assets/images/VIDEO-ON-DEMAND.png",
+                              height: 25, width: 25),
+                          color: bottomNavIndex == 1
+                              ? const Color(0xffF4A42A)
+                              : const Color(0xff77778E),
                           onPressed: () {
                             _onTap(1);
                           },
                         ),
                       ],
                     ),
-                    const Positioned(left: 3, top: 37, child: Text("Counseling"))
+                    const Positioned(
+                        left: 3, top: 37, child: Text("Counseling"))
                   ],
                 ),
                 SizedBox(
@@ -91,8 +95,11 @@ class _TabBarScreenState extends State<TabBarScreen> {
                     Column(
                       children: [
                         IconButton(
-                          icon: Image.asset("assets/images/contact.png", height: 25, width: 25),
-                          color: bottomNavIndex == 2 ? const Color(0xffF4A42A) : const Color(0xff77778E),
+                          icon: Image.asset("assets/images/contact.png",
+                              height: 25, width: 25),
+                          color: bottomNavIndex == 2
+                              ? const Color(0xffF4A42A)
+                              : const Color(0xff77778E),
                           onPressed: () {
                             _onTap(2);
                           },
@@ -109,8 +116,11 @@ class _TabBarScreenState extends State<TabBarScreen> {
                     Column(
                       children: [
                         IconButton(
-                          icon: Image.asset("assets/images/DONATE-NOW.png", height: 25, width: 25),
-                          color: bottomNavIndex == 3 ? const Color(0xffF4A42A) : const Color(0xff77778E),
+                          icon: Image.asset("assets/images/DONATE-NOW.png",
+                              height: 25, width: 25),
+                          color: bottomNavIndex == 3
+                              ? const Color(0xffF4A42A)
+                              : const Color(0xff77778E),
                           onPressed: () {
                             _onTap(3);
                           },
@@ -128,8 +138,11 @@ class _TabBarScreenState extends State<TabBarScreen> {
                     Column(
                       children: [
                         IconButton(
-                          icon: Image.asset("assets/images/logoo-live-2.png", height: 25, width: 25),
-                          color: bottomNavIndex == 4 ? const Color(0xffF4A42A) : const Color(0xff77778E),
+                          icon: Image.asset("assets/images/logoo-live-2.png",
+                              height: 25, width: 25),
+                          color: bottomNavIndex == 4
+                              ? const Color(0xffF4A42A)
+                              : const Color(0xff77778E),
                           onPressed: () {
                             _onTap(4);
                           },

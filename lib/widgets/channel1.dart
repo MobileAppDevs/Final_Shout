@@ -41,8 +41,7 @@ class _Channel1State extends State<Channel1> {
         },
         onWebResourceError: (WebResourceError error) {},
         onNavigationRequest: (NavigationRequest request) {
-          if (request.url.startsWith('https://watch.finalshout.org')) {
-            // https://watch.finalshout.org/family/
+          if (request.url.startsWith('https://www.youtube.com/')) {
             return NavigationDecision.prevent;
           }
           return NavigationDecision.navigate;
@@ -54,6 +53,27 @@ class _Channel1State extends State<Channel1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        leading: Padding(
+          padding: const EdgeInsets.all(7.0),
+          child: InkWell(
+            onTap: () => Navigator.pop(context),
+            child: Container(
+              decoration: const BoxDecoration(
+                  color: Colors.white, shape: BoxShape.circle),
+              padding: const EdgeInsets.only(left: 10.0),
+              child: const Icon(
+                Icons.arrow_back_ios,
+                color: Colors.green,
+              ),
+            ),
+          ),
+        ),
+      ),
+      extendBody: true,
+      extendBodyBehindAppBar: true,
       body: Stack(
         children: [
           WebViewWidget(controller: controller),
