@@ -9,24 +9,22 @@ class Comman {
       required String text2}) {
     return Card(
       elevation: 40,
-      color: Colors.black,
-      child: SizedBox(
-        width: 110,
-        height: 125,
-        child: ElevatedButton(
-          onPressed: () {
-            onPressed();
-          },
-          style: ElevatedButton.styleFrom(
-            shadowColor: Colors.grey.withOpacity(0.9),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10),
-            ),
-            backgroundColor:
-                backgroundColor, // Set the button's background color
-            textStyle: const TextStyle(
-                color: Colors.white), // Set the button's text color
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+      child: ElevatedButton(
+        onPressed: () {
+          onPressed();
+        },
+        style: ElevatedButton.styleFrom(
+          shadowColor: Colors.grey.withOpacity(0.9),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
           ),
+          backgroundColor: backgroundColor, // Set the button's background color
+          textStyle: const TextStyle(
+              color: Colors.white), // Set the button's text color
+        ),
+        child: SizedBox(
+          height: 120,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
