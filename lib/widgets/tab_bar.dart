@@ -5,6 +5,7 @@ import 'package:final_shout/widgets/second_screen.dart';
 import 'package:final_shout/widgets/home_screen.dart';
 import 'package:final_shout/widgets/third_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 
 class TabBarScreen extends StatefulWidget {
@@ -29,10 +30,13 @@ class _TabBarScreenState extends State<TabBarScreen> {
     return SafeArea(
       child: Scaffold(
           resizeToAvoidBottomInset: false,
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.white12,
           floatingActionButton: FloatingActionButton(
             onPressed: () {
+              SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown])
+                  .then((_) {});
               _onTap(2);
+              print("check how it ");
             },
             elevation: 0,
             backgroundColor: Colors.transparent,
@@ -45,49 +49,46 @@ class _TabBarScreenState extends State<TabBarScreen> {
               ),
             ),
           ),
-
+          //
           // SvgPicture.asset('assets/images/home_icn.svg', height: 70)),
           body: _getPage(bottomNavIndex),
           extendBody: true,
-          floatingActionButtonLocation:
-              FloatingActionButtonLocation.centerDocked,
-          bottomNavigationBar: BottomNavigationBar(
-            type: BottomNavigationBarType.fixed,
-            onTap: (index) => _onTap(index),
-            currentIndex: bottomNavIndex,
-            selectedFontSize: 12,
-            unselectedFontSize: 12,
-            iconSize: 25,
-            selectedItemColor: const Color(0xffF4A42A),
-            unselectedItemColor: const Color(0xff77778E),
-            selectedLabelStyle: const TextStyle(fontWeight: FontWeight.w600),
-            unselectedLabelStyle: const TextStyle(fontWeight: FontWeight.w600),
-            items: <BottomNavigationBarItem>[
-              BottomNavigationBarItem(
-                  icon: Image.asset("assets/images/VIDEO-ON-DEMAND.png",
-                      height: 35, width: 35),
-                  label: 'Counseling'),
-              BottomNavigationBarItem(
-                  icon: Image.asset("assets/images/contact.png",
-                      height: 35, width: 35),
-                  label: 'Contact'),
-              BottomNavigationBarItem(
-                icon: Icon(
-                  iconList[2],
-                  color: Colors.white,
-                  size: 25,
+          floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+          bottomNavigationBar: Container(
+            margin: const EdgeInsets.only(top: 1),
+            // color: Colors.red,
+            child: BottomNavigationBar(
+              elevation: 0.0,
+              // backgroundColor: Colors.white,
+              type: BottomNavigationBarType.fixed,
+              onTap: (index) => _onTap(index),
+              currentIndex: bottomNavIndex,
+              selectedFontSize: 12,
+              unselectedFontSize: 12,
+              iconSize: 25,
+              selectedItemColor: const Color(0xffF4A42A),
+              unselectedItemColor: const Color(0xff77778E),
+              selectedLabelStyle: const TextStyle(fontWeight: FontWeight.w600),
+              unselectedLabelStyle: const TextStyle(fontWeight: FontWeight.w600),
+              items: <BottomNavigationBarItem>[
+                BottomNavigationBarItem(
+                    icon: Image.asset("assets/images/VIDEO-ON-DEMAND.png", height: 35, width: 35), label: 'Counseling'),
+                BottomNavigationBarItem(
+                    icon: Image.asset("assets/images/contact.png", height: 35, width: 35), label: 'Contact'),
+                BottomNavigationBarItem(
+                  icon: Icon(
+                    iconList[2],
+                    color: Colors.white,
+                    size: 25,
+                  ),
+                  label: '',
                 ),
-                label: '',
-              ),
-              BottomNavigationBarItem(
-                  icon: Image.asset("assets/images/DONATE-NOW.png",
-                      height: 35, width: 35),
-                  label: 'Donate'),
-              BottomNavigationBarItem(
-                  icon: Image.asset("assets/images/logoo-live-2.png",
-                      height: 35, width: 35),
-                  label: 'Shows')
-            ],
+                BottomNavigationBarItem(
+                    icon: Image.asset("assets/images/DONATE-NOW.png", height: 35, width: 35), label: 'Donate'),
+                BottomNavigationBarItem(
+                    icon: Image.asset("assets/images/logoo-live-2.png", height: 35, width: 35), label: 'Shows')
+              ],
+            ),
           )),
     );
   }

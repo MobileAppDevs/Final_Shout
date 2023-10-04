@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class ForthScreen extends StatefulWidget {
@@ -19,6 +20,13 @@ class _ForthScreenState extends State<ForthScreen> {
   @override
   void initState() {
     super.initState();
+     SystemChrome.setPreferredOrientations([
+    DeviceOrientation.landscapeLeft,
+      DeviceOrientation.landscapeRight,
+       DeviceOrientation.portraitDown,
+        DeviceOrientation.portraitUp,
+   
+    ]);
     controller = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
       ..setBackgroundColor(const Color(0x00000000))
@@ -41,12 +49,24 @@ class _ForthScreenState extends State<ForthScreen> {
         },
         onWebResourceError: (WebResourceError error) {},
         onNavigationRequest: (NavigationRequest request) {
-          if (request.url.startsWith('https://www.youtube.com/')) {
+  if (request.url.startsWith('https://www.youtube.com/')) {
+    // Check if the request contains "/embed/" to identify YouTube video embeds
+    if (request.url.contains('/embed/')) {
+      return NavigationDecision.navigate; // Allow YouTube video embeds
+    } else {
+      return NavigationDecision.prevent; // Prevent regular YouTube pages
+    }
+  }
+  return NavigationDecision.navigate; // Allow other URLs
+},
 
-            return NavigationDecision.prevent;
-          }
-          return NavigationDecision.navigate;
-        },
+        // onNavigationRequest: (NavigationRequest request) {
+        //   if (request.url.startsWith('https://www.youtube.com/')) {
+
+        //     return NavigationDecision.prevent;
+        //   }
+        //   return NavigationDecision.navigate;
+        // },
       ))
       ..loadRequest(Uri.parse('https://finalshout.org/live-shows'));
   }

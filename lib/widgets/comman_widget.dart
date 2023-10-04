@@ -20,8 +20,7 @@ class Comman {
             borderRadius: BorderRadius.circular(10),
           ),
           backgroundColor: backgroundColor, // Set the button's background color
-          textStyle: const TextStyle(
-              color: Colors.white), // Set the button's text color
+          textStyle: const TextStyle(color: Colors.white), // Set the button's text color
         ),
         child: SizedBox(
           height: 120,
@@ -41,19 +40,13 @@ class Comman {
                     child: Text(
                       textAlign: TextAlign.center,
                       text,
-                      style: const TextStyle(
-                          fontSize: 11,
-                          fontWeight: FontWeight.w600,
-                          color: Colors.black),
+                      style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: Colors.black),
                     ),
                   ),
                   Text(
                     textAlign: TextAlign.center,
                     text2,
-                    style: const TextStyle(
-                        fontSize: 11,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.black),
+                    style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: Colors.black),
                   ),
                 ],
               ),
@@ -83,8 +76,7 @@ class Comman {
             borderRadius: BorderRadius.circular(10),
           ),
           backgroundColor: backgroundColor, // Set the button's background color
-          textStyle: const TextStyle(
-              color: Colors.white), // Set the button's text color
+          textStyle: const TextStyle(color: Colors.white), // Set the button's text color
         ),
         child: Padding(
           padding: const EdgeInsets.only(top: 12.0),
@@ -98,17 +90,11 @@ class Comman {
               const SizedBox(height: 5),
               Text(
                 text,
-                style: const TextStyle(
-                    fontSize: 11,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.black),
+                style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: Colors.black),
               ),
               Text(
                 text2,
-                style: const TextStyle(
-                    fontSize: 11,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.black),
+                style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: Colors.black),
               ),
             ],
           ),

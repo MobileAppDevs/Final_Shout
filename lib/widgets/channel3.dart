@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class Channel3 extends StatefulWidget {
@@ -19,6 +20,13 @@ class _Channel3State extends State<Channel3> {
   @override
   void initState() {
     super.initState();
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.landscapeLeft,
+      DeviceOrientation.landscapeRight,
+       DeviceOrientation.portraitDown,
+        DeviceOrientation.portraitUp,
+   
+    ]);
     controller = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
       ..setBackgroundColor(const Color(0x00000000))
@@ -59,7 +67,11 @@ class _Channel3State extends State<Channel3> {
         leading: Padding(
           padding: const EdgeInsets.all(7.0),
           child: InkWell(
-            onTap: () => Navigator.pop(context),
+            onTap: () => {
+              SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown])
+                  .then((_) {}),
+              Navigator.pop(context)
+            },
             child: Container(
               decoration: const BoxDecoration(
                   color: Colors.white, shape: BoxShape.circle),
