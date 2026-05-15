@@ -1,7 +1,7 @@
 -- Merging decision tree log ---
 application
-INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/android/app/src/main/AndroidManifest.xml:2:5-32:19
-INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/main/AndroidManifest.xml:2:5-32:19
+INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/debug/AndroidManifest.xml
 MERGED from [androidx.window:window:1.2.0] /Users/ongraph/.gradle/caches/8.14/transforms/ba18b21e180de95697f7173f8fcc30d1/transformed/window-1.2.0/AndroidManifest.xml:22:5-29:19
 MERGED from [androidx.window:window:1.2.0] /Users/ongraph/.gradle/caches/8.14/transforms/ba18b21e180de95697f7173f8fcc30d1/transformed/window-1.2.0/AndroidManifest.xml:22:5-29:19
 MERGED from [androidx.core:core:1.13.1] /Users/ongraph/.gradle/caches/8.14/transforms/8fce4b6817afdbcb773f05070652658e/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
@@ -15,18 +15,18 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/ongraph/.gradle/cach
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ongraph/.gradle/caches/8.14/transforms/e727d9040a685ab5cfa3dbc562b2e68d/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ongraph/.gradle/caches/8.14/transforms/e727d9040a685ab5cfa3dbc562b2e68d/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 	android:extractNativeLibs
-		INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/debug/AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] /Users/ongraph/.gradle/caches/8.14/transforms/8fce4b6817afdbcb773f05070652658e/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 	android:name
-		INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/main/AndroidManifest.xml
 manifest
-ADDED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/android/app/src/main/AndroidManifest.xml:1:1-33:12
-MERGED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/android/app/src/main/AndroidManifest.xml:1:1-33:12
-INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-MERGED from [:webview_flutter_android] /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/build/webview_flutter_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+ADDED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/main/AndroidManifest.xml:1:1-33:12
+MERGED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+MERGED from [:webview_flutter_android] /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/build/webview_flutter_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.fragment:fragment:1.7.1] /Users/ongraph/.gradle/caches/8.14/transforms/20d783aebbd3b3e1ccfa231df42157f0/transformed/fragment-1.7.1/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.webkit:webkit:1.15.0] /Users/ongraph/.gradle/caches/8.14/transforms/9eaeb423747d3b5572dc90030d2cbc4a/transformed/webkit-1.15.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.window:window:1.2.0] /Users/ongraph/.gradle/caches/8.14/transforms/ba18b21e180de95697f7173f8fcc30d1/transformed/window-1.2.0/AndroidManifest.xml:17:1-31:12
@@ -56,23 +56,23 @@ MERGED from [androidx.window.extensions.core:core:1.0.0] /Users/ongraph/.gradle/
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/ongraph/.gradle/caches/8.14/transforms/e0bd2d7b14a4e7d4e0043a24b8010eb8/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] /Users/ongraph/.gradle/caches/8.14/transforms/88e4db718ca9bce8f5e7b1d422d1f54f/transformed/relinker-1.4.5/AndroidManifest.xml:2:1-7:12
 	package
-		INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/android/app/src/debug/AndroidManifest.xml:6:5-66
+ADDED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/debug/AndroidManifest.xml:6:5-66
 	android:name
-		ADDED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/android/app/src/debug/AndroidManifest.xml:6:22-64
+		ADDED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/debug/AndroidManifest.xml:6:22-64
 uses-sdk
-INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/android/app/src/debug/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/android/app/src/debug/AndroidManifest.xml
-MERGED from [:webview_flutter_android] /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/build/webview_flutter_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
-MERGED from [:webview_flutter_android] /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/build/webview_flutter_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/debug/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/debug/AndroidManifest.xml
+MERGED from [:webview_flutter_android] /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/build/webview_flutter_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter_android] /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/build/webview_flutter_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
 MERGED from [androidx.fragment:fragment:1.7.1] /Users/ongraph/.gradle/caches/8.14/transforms/20d783aebbd3b3e1ccfa231df42157f0/transformed/fragment-1.7.1/AndroidManifest.xml:5:5-44
 MERGED from [androidx.fragment:fragment:1.7.1] /Users/ongraph/.gradle/caches/8.14/transforms/20d783aebbd3b3e1ccfa231df42157f0/transformed/fragment-1.7.1/AndroidManifest.xml:5:5-44
 MERGED from [androidx.webkit:webkit:1.15.0] /Users/ongraph/.gradle/caches/8.14/transforms/9eaeb423747d3b5572dc90030d2cbc4a/transformed/webkit-1.15.0/AndroidManifest.xml:5:5-44
@@ -130,9 +130,9 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/ongraph/.
 MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] /Users/ongraph/.gradle/caches/8.14/transforms/88e4db718ca9bce8f5e7b1d422d1f54f/transformed/relinker-1.4.5/AndroidManifest.xml:5:5-43
 MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] /Users/ongraph/.gradle/caches/8.14/transforms/88e4db718ca9bce8f5e7b1d422d1f54f/transformed/relinker-1.4.5/AndroidManifest.xml:5:5-43
 	android:targetSdkVersion
-		INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/finalshout/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/debug/AndroidManifest.xml
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.2.0] /Users/ongraph/.gradle/caches/8.14/transforms/ba18b21e180de95697f7173f8fcc30d1/transformed/window-1.2.0/AndroidManifest.xml:23:9-25:40
 	android:required
