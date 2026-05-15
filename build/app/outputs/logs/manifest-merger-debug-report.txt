@@ -27,6 +27,7 @@ INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/and
 INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 MERGED from [:webview_flutter_android] /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/build/webview_flutter_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_native_splash] /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/build/flutter_native_splash/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.fragment:fragment:1.7.1] /Users/ongraph/.gradle/caches/8.14/transforms/20d783aebbd3b3e1ccfa231df42157f0/transformed/fragment-1.7.1/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.webkit:webkit:1.15.0] /Users/ongraph/.gradle/caches/8.14/transforms/9eaeb423747d3b5572dc90030d2cbc4a/transformed/webkit-1.15.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.window:window:1.2.0] /Users/ongraph/.gradle/caches/8.14/transforms/ba18b21e180de95697f7173f8fcc30d1/transformed/window-1.2.0/AndroidManifest.xml:17:1-31:12
@@ -73,6 +74,8 @@ INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/and
 INJECTED from /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/android/app/src/debug/AndroidManifest.xml
 MERGED from [:webview_flutter_android] /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/build/webview_flutter_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
 MERGED from [:webview_flutter_android] /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/build/webview_flutter_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_native_splash] /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/build/flutter_native_splash/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_native_splash] /Users/ongraph/Desktop/Project/Flutter/Final Shout/Final_Shout/build/flutter_native_splash/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
 MERGED from [androidx.fragment:fragment:1.7.1] /Users/ongraph/.gradle/caches/8.14/transforms/20d783aebbd3b3e1ccfa231df42157f0/transformed/fragment-1.7.1/AndroidManifest.xml:5:5-44
 MERGED from [androidx.fragment:fragment:1.7.1] /Users/ongraph/.gradle/caches/8.14/transforms/20d783aebbd3b3e1ccfa231df42157f0/transformed/fragment-1.7.1/AndroidManifest.xml:5:5-44
 MERGED from [androidx.webkit:webkit:1.15.0] /Users/ongraph/.gradle/caches/8.14/transforms/9eaeb423747d3b5572dc90030d2cbc4a/transformed/webkit-1.15.0/AndroidManifest.xml:5:5-44
