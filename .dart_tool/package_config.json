@@ -89,7 +89,7 @@
       "name": "flutter",
       "rootUri": "file:///Users/ongraph/Documents/flutter/packages/flutter",
       "packageUri": "lib/",
-      "languageVersion": "3.9"
+      "languageVersion": "3.10"
     },
     {
       "name": "flutter_launcher_icons",
@@ -119,13 +119,13 @@
       "name": "flutter_test",
       "rootUri": "file:///Users/ongraph/Documents/flutter/packages/flutter_test",
       "packageUri": "lib/",
-      "languageVersion": "3.9"
+      "languageVersion": "3.10"
     },
     {
       "name": "flutter_web_plugins",
       "rootUri": "file:///Users/ongraph/Documents/flutter/packages/flutter_web_plugins",
       "packageUri": "lib/",
-      "languageVersion": "3.9"
+      "languageVersion": "3.10"
     },
     {
       "name": "get",
@@ -201,7 +201,7 @@
     },
     {
       "name": "meta",
-      "rootUri": "file:///Users/ongraph/.pub-cache/hosted/pub.dev/meta-1.17.0",
+      "rootUri": "file:///Users/ongraph/.pub-cache/hosted/pub.dev/meta-1.18.0",
       "packageUri": "lib/",
       "languageVersion": "3.5"
     },
@@ -239,7 +239,7 @@
       "name": "sky_engine",
       "rootUri": "file:///Users/ongraph/Documents/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
-      "languageVersion": "3.9"
+      "languageVersion": "3.10"
     },
     {
       "name": "source_span",
@@ -273,7 +273,7 @@
     },
     {
       "name": "test_api",
-      "rootUri": "file:///Users/ongraph/.pub-cache/hosted/pub.dev/test_api-0.7.10",
+      "rootUri": "file:///Users/ongraph/.pub-cache/hosted/pub.dev/test_api-0.7.11",
       "packageUri": "lib/",
       "languageVersion": "3.7"
     },
@@ -369,8 +369,8 @@
     }
   ],
   "generator": "pub",
-  "generatorVersion": "3.11.5",
+  "generatorVersion": "3.12.0",
   "flutterRoot": "file:///Users/ongraph/Documents/flutter",
-  "flutterVersion": "3.41.9",
+  "flutterVersion": "3.44.0",
   "pubCache": "file:///Users/ongraph/.pub-cache"
 }
